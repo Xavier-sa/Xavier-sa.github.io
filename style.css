@@ -7,6 +7,13 @@ body {
     color: #333; /* Texto em cinza escuro */
 }
 
+/* Centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* Container do cabeçalho */
 header {
     background-color: #ff6f00; /* Cor laranja similar ao uniforme de Goku */
@@ -65,24 +72,26 @@ div h2 {
     line-height: 1.6;
 }
 
-/* Linguagens e Ferramentas */
-.skills ul, .competencies ul {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    text-align: center;
+/* Carrossel (slider) */
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
 }
 
-.skills li, .competencies li {
+.carousel-item {
     background-color: #ffd600; /* Amarelo semelhante à energia de um Super Saiyajin */
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
+    min-width: 150px;
+    text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
 }
 
-.skills li:hover, .competencies li:hover {
+.carousel-item:hover {
     background-color: #ffb300; /* Amarelo mais forte ao passar o mouse */
 }
 
@@ -121,7 +130,7 @@ footer a:hover {
         font-size: 1.5rem;
     }
 
-    .about p, .skills li, .competencies li {
+    .about p, .carousel-item {
         font-size: 1rem;
     }
 }
@@ -142,7 +151,7 @@ footer a:hover {
         font-size: 1.2rem;
     }
 
-    .about p, .skills li, .competencies li {
+    .about p, .carousel-item {
         font-size: 0.9rem;
     }
 }
