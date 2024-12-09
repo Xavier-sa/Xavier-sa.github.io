@@ -26,6 +26,12 @@ header img {
     border-radius: 50%;
     border: 3px solid #ffffff; /* Borda branca ao redor da imagem */
     margin-bottom: 15px;
+    transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+header img:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Adiciona cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente a foto */
 }
 
 header h1 {
@@ -95,4 +101,48 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas pequenas (exemplo: smartphones) */
+@media (max-width: 768px) {
+    header .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div {
+        margin: 0 5%;
+        padding: 30px;
+    }
+
+    div h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p, .skills li, .competencies li {
+        font-size: 1rem;
+    }
+}
+
+/* Para telas muito pequenas (exemplo: celulares em modo retrato) */
+@media (max-width: 480px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    div {
+        margin: 0 3%;
+        padding: 20px;
+    }
+
+    div h2 {
+        font-size: 1.2rem;
+    }
+
+    .about p, .skills li, .competencies li {
+        font-size: 0.9rem;
+    }
 }
