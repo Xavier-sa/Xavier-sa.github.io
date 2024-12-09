@@ -1,0 +1,98 @@
+/* Estilo básico para o layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Fundo cinza claro */
+    color: #333; /* Texto em cinza escuro */
+}
+
+/* Container do cabeçalho */
+header {
+    background-color: #ff6f00; /* Cor laranja similar ao uniforme de Goku */
+    padding: 20px;
+    text-align: center;
+}
+
+header .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff; /* Borda branca ao redor da imagem */
+    margin-bottom: 15px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Seções de conteúdo */
+div {
+    padding: 40px;
+    margin: 0 10%;
+}
+
+div h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff6f00; /* Título em laranja */
+    margin-bottom: 20px;
+}
+
+/* Sobre Mim */
+.about p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Linguagens e Ferramentas */
+.skills ul, .competencies ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+.skills li, .competencies li {
+    background-color: #ffd600; /* Amarelo semelhante à energia de um Super Saiyajin */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills li:hover, .competencies li:hover {
+    background-color: #ffb300; /* Amarelo mais forte ao passar o mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #00bfff; /* Azul claro semelhante ao uniforme de Vegeta */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
