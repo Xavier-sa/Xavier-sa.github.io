@@ -1,171 +1,125 @@
-/* Estilo básico para o layout */
+/* Estilo global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0e0e0; /* Fundo cinza claro */
-    color: #333; /* Texto em cinza escuro */
+    background-color: #e0e0e0;
+    color: #333;
 }
 
-/* Container do cabeçalho */
+/* Cabeçalho */
 header {
-    background-color: #ff6f00; /* Cor laranja similar ao uniforme de Goku */
+    background-color: #ff6f00;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header .profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .profile-info img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções principais */
+section {
     padding: 40px 20px;
     text-align: center;
 }
 
-header .profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about, .skills, .competencies {
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #ffffff; /* Borda branca ao redor da imagem */
-    margin-bottom: 15px;
-    transition: all 0.3s ease-in-out; /* Transição suave */
-}
-
-header img:hover {
-    background-color: rgba(255, 255, 255, 0.6); /* Adiciona cor ao passar o mouse */
-    transform: scale(1.1); /* Aumenta ligeiramente a foto */
-}
-
-header h2 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin: 0;
-}
-
-header p {
-    color: #ffffff;
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Seções de conteúdo */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Sobre Mim */
-.about {
-    padding: 40px 0;
-    background-color: #f9f9f9;
-}
-
-.about h2 {
-    text-align: center;
-    font-size: 2rem;
+section h2 {
     color: #ff6f00;
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-.about p {
+section p {
     font-size: 1.2rem;
-    text-align: center;
     line-height: 1.6;
 }
 
-/* Carrossel (slider) */
+/* Carrossel */
 .carousel {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
+    gap: 15px;
+    padding: 20px;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Suporte para rolagem suave em dispositivos móveis */
+    -webkit-overflow-scrolling: touch;
 }
 
 .carousel-item {
-    background-color: #ffd600; /* Amarelo semelhante à energia de um Super Saiyajin */
-    padding: 20px;
-    border-radius: 5px;
-    min-width: 150px;
+    background-color: #ffd600;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 120px;
     text-align: center;
+    font-size: 1rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     scroll-snap-align: center;
-    transition: background-color 0.3s ease-in-out;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .carousel-item:hover {
-    background-color: #ffb300; /* Amarelo mais forte ao passar o mouse */
+    transform: scale(1.05);
+    background-color: #ffb300;
 }
 
-/* Footer */
+/* Rodapé */
 footer {
-    background-color: #00bfff; /* Azul claro semelhante ao uniforme de Vegeta */
+    background-color: #00bfff;
     color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
 footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-footer a:hover {
+    color: white;
     text-decoration: underline;
 }
 
-/* Media Queries para Responsividade */
+footer a:hover {
+    text-decoration: none;
+}
 
-/* Para telas pequenas (exemplo: smartphones) */
+/* Responsividade */
 @media (max-width: 768px) {
-    header .profile-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header img {
+    header .profile-info img {
         width: 120px;
         height: 120px;
     }
-    
-    .about {
-        padding: 30px 0;
-    }
 
-    div {
-        margin: 0 10%;
-    }
-
-    div h2 {
-        font-size: 1.5rem;
-    }
-
-    .about p, .carousel-item {
+    section p {
         font-size: 1rem;
     }
 }
 
-/* Para telas muito pequenas (exemplo: celulares em modo retrato) */
 @media (max-width: 480px) {
-    header img {
+    header .profile-info img {
         width: 100px;
         height: 100px;
     }
 
     .carousel-item {
-        min-width: 120px;
-        padding: 15px;
-    }
-
-    div {
-        margin: 0 5%;
-    }
-
-    div h2 {
-        font-size: 1.2rem;
-    }
-
-    .about p, .carousel-item {
+        min-width: 100px;
+        padding: 10px;
         font-size: 0.9rem;
     }
 }
