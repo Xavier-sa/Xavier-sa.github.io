@@ -1,131 +1,17 @@
-/* Estilo global */
-body {
-    font-family: 'Arial', sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Fundo claro e neutro */
-    color: #333; /* Texto em cinza escuro */
-    line-height: 1.6;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #0078D7; /* Azul moderno */
-    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 50px 20px;
+    background-color: #171616;
 }
 
-header .profile-info img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-header .profile-info img:hover {
-    transform: scale(1.1); /* Zoom suave na imagem */
-}
-
-header h2 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin: 10px 0 0;
-}
-
-/* Seções principais */
-section {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 30px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    max-width: 800px;
-    text-align: center;
-}
-
-section h2 {
-    color: #0078D7;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-section p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Grade de itens (Linguagens e Competências) */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.grid-item {
-    background-color: #f4f4f9;
-    color: #333;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.grid-item:hover {
-    background-color: #0078D7; /* Azul ao passar o mouse */
-    color: #fff; /* Texto branco */
-    transform: translateY(-5px); /* Elevação ao passar o mouse */
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-footer a {
-    color: #0078D7;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    header h2 {
-        font-size: 1.5rem;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    section p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header .profile-info img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .grid-item {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
+/* Estilo para a imagem ocupar toda a tela */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
