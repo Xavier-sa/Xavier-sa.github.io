@@ -1,17 +1,37 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #171616;
-}
-
-/* Estilo para a imagem ocupar toda a tela */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .profissional {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .dark {
+      background-color: #111;
+      color: #FFA500;
+      border: 3px solid #FF4500;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    h1 {
+      margin: 0;
+    }
+    select, button {
+      margin-top: 20px;
+      padding: 8px;
+    }
