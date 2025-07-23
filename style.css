@@ -3,35 +3,48 @@
       margin: 0;
       padding: 20px;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
       padding: 20px;
       border-radius: 10px;
     }
+
     .profissional {
       background-color: #f5f5f5;
       color: #333;
     }
+
     .dark {
       background-color: #111;
       color: #FFA500;
       border: 3px solid #FF4500;
     }
+
     .header {
       display: flex;
       align-items: center;
       gap: 20px;
     }
+
     .header img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
     }
+
     h1 {
       margin: 0;
     }
-    select, button {
+
+    select,
+    button {
       margin-top: 20px;
       padding: 8px;
+    }
+
+    #curriculo {
+      min-height: 1180px;
+      
     }
